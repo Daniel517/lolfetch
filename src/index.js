@@ -5,12 +5,17 @@ import * as serviceWorker from './serviceWorker';
 import Nav from './Components/Nav'
 import Footer from './Components/Footer'
 import Home from './Components/Home'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Nav />
-    <Home />
-    <Footer />
+    <Router>
+      <Nav />
+      <Switch>
+        <Route path='/' exact component={Home} />
+      </Switch>
+      <Footer />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
