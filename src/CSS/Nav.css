@@ -1,0 +1,15 @@
+.brand {
+    font-size: 24pt;
+}
+.bottom-border {
+    border-bottom: #11D966;
+    border-bottom-style: solid;
+    border-width: 2px;
+}
+.navbar-custom {
+    background-color: #D3D3D3;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: #707070;
+}

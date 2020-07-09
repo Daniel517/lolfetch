@@ -1,0 +1,10 @@
+.top-border {
+    border-top: #707070;
+    border-top-style: solid;
+    border-width: 1px;
+}
+.brand-font {
+    font-family: alegreya, serif;
+    font-weight: 400;
+    font-style: italic;
+}

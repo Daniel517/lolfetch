@@ -6,8 +6,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.main-font {
+  font-family: gill-sans-nova-inline;
+  font-weight: 700;
+  font-style: normal;
+}
+.second-font {
+  font-family: itc-american-typewriter, serif;
+  font-weight: 500;
+  font-style: normal;
+}
+

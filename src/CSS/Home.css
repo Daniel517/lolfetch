@@ -1,0 +1,12 @@
+.title {
+    font-size: 60pt;
+}
+.sub-title {
+    font-size: 32pt;
+}
+.textfield {
+    background-color: #D3D3D3;
+    border: #11D966;
+    border-style: solid;
+    border-width: 1px;
+}
