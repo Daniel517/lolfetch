@@ -5,6 +5,7 @@ import * as serviceWorker from './serviceWorker';
 import Nav from './Components/Nav'
 import Footer from './Components/Footer'
 import Home from './Components/Home'
+import SummonerPage from './Components/SummonerPage'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
 ReactDOM.render(
@@ -13,6 +14,7 @@ ReactDOM.render(
       <Nav />
       <Switch>
         <Route path='/' exact component={Home} />
+        <Route path='/summoner/:summoner' component={SummonerPage} />
       </Switch>
       <Footer />
     </Router>
