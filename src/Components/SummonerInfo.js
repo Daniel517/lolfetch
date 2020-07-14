@@ -5,6 +5,7 @@ import axios from 'axios'
 function SummonerInfo(props) {
 
     const [summonerId, setSummonerId] = useState(props.summonerId)
+    const [summonerIcon, setSummonerIcon] = useState(props.profileIconId)
     const [rankSolo, setRankSolo] = useState({})
     const [rankFlex, setRankFlex] = useState({})
     const [rerender, setRerender] = useState(false)
@@ -43,13 +44,18 @@ function SummonerInfo(props) {
         return Object.keys(obj).length === 0 ? true : false
     }
 
+    const getIconLink = () => {
+        return `http://ddragon.leagueoflegends.com/cdn/10.14.1/img/profileicon/${summonerIcon}.png`
+    }
+
     if (!rerender) return false
 
     return(
         <div className="my-5 w-75 mx-auto main-div">
             <div className="d-flex p-5">
                 <div className="flex-fill text-center">
-                    <img src="https://raw.communitydragon.org/10.13/game/assets/clash/roster-logos/0/0_64.png" alt=""/>
+                    <img src={getIconLink()} width="50" height="50" alt=""/>
+                    <br></br>
                     <label className="third-font main-name">{props.summonerName}</label>
                 </div>
                 <div className="flex-fill text-center">

@@ -33,7 +33,7 @@ function SummonerPage({match}) {
 
     return(
         <div>
-            <SummonerInfo summonerName={summonerName} summonerId={summonerInfo.id}/>
+            <SummonerInfo summonerName={summonerName} summonerId={summonerInfo.id} profileIconId={summonerInfo.profileIconId}/>
         </div>
     );
 
