@@ -51,7 +51,7 @@ function SummonerInfo(props) {
     if (!rerender) return false
 
     return(
-        <div className="my-5 w-75 mx-auto main-div">
+        <div className="mt-5 mb-4 w-75 mx-auto main-div">
             <div className="d-flex p-5">
                 <div className="flex-fill text-center">
                     <img src={getIconLink()} width="50" height="50" alt=""/>
