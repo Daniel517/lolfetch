@@ -3,6 +3,7 @@ import '../CSS/SummonerPage.css';
 import axios from 'axios'
 
 import SummonerInfo from '../Components/SummonerInfo'
+import SummonerHistory from '../Components/SummonerHistory'
 
 function SummonerPage({match}) {
 
@@ -34,6 +35,7 @@ function SummonerPage({match}) {
     return(
         <div>
             <SummonerInfo summonerName={summonerName} summonerId={summonerInfo.id} profileIconId={summonerInfo.profileIconId}/>
+            <SummonerHistory accountId={summonerInfo.accountId}/>
         </div>
     );
 
