@@ -1,0 +1,13 @@
+.bg-header {
+    background-color: #727272;
+    border: #4CDF83;
+    border-style: solid;
+    border-width: 1px;
+}
+.title {
+    color: #4CDF83;
+    font-size: 32pt;
+}
+.options{
+    color: #FFFFFF;
+}
