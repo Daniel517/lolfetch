@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import '../CSS/SummonerHistory.css';
 import axios from 'axios'
 
+import MatchDetails from '../Components/MatchDetails.js'
+
 function SummonerInfo(props) {
 
     const [accountId, setAccountId] = useState(props.accountId)
@@ -15,7 +17,7 @@ function SummonerInfo(props) {
         }
     }, [rerender])
 
-    //Makes API call for summoner ranks
+    //Makes API call for summoner match history
     const getMatchHistory = async summonerId => {
         const rankUrl = `http://192.168.0.15:5000/lflolapi/matchHistory?accountId=${accountId}`
         await axios
@@ -50,22 +52,16 @@ function SummonerInfo(props) {
                     </div>
                 </div>
             </div>
-            <div className="card-content">
+            <div className="card-content bg-content">
                 <div className="d-flex">
-                    <div className="card flex-fill m-3">
-                        <div className="card-header">
-                            OK
-                        </div>
+                    <div className="flex-fill m-3">
+                        <MatchDetails matchDetails={matchHistory[0]} />
                     </div>
-                    <div className="card flex-fill m-3">
-                        <div className="card-header">
-                            OK
-                        </div>
+                    <div className="flex-fill m-3">
+                        <MatchDetails matchDetails={matchHistory[0]} />
                     </div>
-                    <div className="card flex-fill m-3">
-                        <div className="card-header">
-                            OK
-                        </div>
+                    <div className="flex-fill m-3">
+                        <MatchDetails matchDetails={matchHistory[0]} />
                     </div>
                 </div>
             </div>

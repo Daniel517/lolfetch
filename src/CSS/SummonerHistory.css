@@ -4,6 +4,9 @@
     border-style: solid;
     border-width: 1px;
 }
+.bg-content {
+    background-color: #D3D3D3;
+}
 .title {
     color: #4CDF83;
     font-size: 32pt;
